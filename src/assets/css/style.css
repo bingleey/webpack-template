@@ -1,0 +1,331 @@
+/* 头部样式 */
+.header-tip {
+  height: 35px;
+  line-height: 35px;
+  font-size: 12px;
+  color: #666666;
+  text-indent: 17px;
+  border-bottom: 1px solid #ddd;
+}
+.header-nav {
+  height: 100px;
+}
+.header-nav .logo {
+  float: left;
+  width: 247px;
+  height: 80px;
+  margin-top: 10px;
+}
+.header-nav .logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+.header-nav .nav-list {
+  float: right;
+  font-size: 0;
+}
+.header-nav .nav-list .nav-item {
+  position: relative;
+  height: 100px;
+  line-height: 100px;
+  font-size: 14px;
+  display: inline-block;
+  cursor: pointer;
+}
+.header-nav .nav-list .nav-item > a {
+  padding: 0 40px;
+  display: block;
+  color: #333;
+}
+.header-nav .nav-list .nav-item.active {
+  background-color: #a99a3d;
+}
+.header-nav .nav-list .nav-item.active > a {
+  color: #fff;
+}
+.header-nav .nav-list .nav-item .nav-item_menu {
+  z-index: 9;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  display: none;
+}
+.header-nav .nav-list .nav-item .nav-item_menu > li {
+  display: block;
+  height: 47px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 47px;
+  text-decoration: none;
+  background-color: rgba(169, 154, 61, 0.4);
+}
+.header-nav .nav-list .nav-item .nav-item_menu > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.header-nav .nav-list .nav-item .nav-item_menu > li:hover {
+  background-color: #a99a3d;
+}
+.swiper-box {
+  width: 100%;
+  height: 700px;
+  background-color: pink;
+}
+.breack {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  overflow: hidden;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ecebeb;
+}
+.breack a,
+.breack span,
+.breack i {
+  color: #666;
+  font-size: 12px;
+}
+.breack i {
+  margin: 0 5px;
+}
+.bannar {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.bannar .banner-box {
+  z-index: 0;
+  width: 1920px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -960px;
+}
+.bannar .banner-box > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+.footer {
+  border-top: 2px solid #c6bd8b;
+  height: 130px;
+}
+.footer .footer-logo {
+  float: left;
+  width: 216px;
+  height: 80px;
+  overflow: hidden;
+  margin: 32px 0 0 0;
+  border-right: 1px solid #c1bfbf;
+}
+.footer .footer-logo img {
+  display: block;
+  width: 118px;
+  height: 55px;
+  margin: 13px 0 0 48px;
+  background-color: pink;
+}
+.footer .footer-mid {
+  margin-top: 32px;
+  float: left;
+  font-size: 12px;
+}
+.footer .footer-mid .footer_nav {
+  height: 16px;
+  line-height: 16px;
+  margin-left: 28px;
+}
+.footer .footer-mid .footer_nav a {
+  color: #666;
+  padding: 0 20px;
+}
+.footer .footer-mid .footer_nav i {
+  color: #c1bfbf;
+}
+.footer .footer-mid .footer_link {
+  margin-top: 13px;
+  margin-left: 48px;
+}
+.footer .footer-mid .footer_link > span {
+  color: #666;
+  margin-right: 14px;
+}
+.footer .footer-mid .footer_link > a {
+  margin-right: 30px;
+  color: #666;
+}
+.footer .footer-mid .footer_copyright {
+  margin-top: 13px;
+  margin-left: 48px;
+  color: #666;
+}
+.footer .footer-Qr {
+  float: right;
+  width: 100px;
+  height: 100px;
+  margin-top: 13px;
+}
+.footer .footer-Qr > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+.main {
+  position: relative;
+  margin: 63px auto;
+}
+.main .sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 247px;
+}
+.main .sidebar dt,
+.main .sidebar dd {
+  width: 100%;
+  height: 49px;
+  line-height: 49px;
+  border-bottom: 1px solid #fff;
+  background-color: #EFEEEE;
+}
+.main .sidebar dt > a,
+.main .sidebar dd > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: 26px;
+  font-size: 12px;
+  color: #333;
+}
+.main .sidebar dt > a:hover,
+.main .sidebar dd > a:hover {
+  background-color: #E2E0E1;
+  color: #9F9241;
+}
+.main .sidebar dt > a.active,
+.main .sidebar dd > a.active {
+  background-color: #E2E0E1;
+  color: #9F9241;
+}
+.main .sidebar dt {
+  padding-left: 0;
+  text-align: center;
+  font-size: 16px;
+  background-color: #a99a3d;
+  color: #fff;
+}
+.main .content {
+  width: 920px;
+  min-height: 300px;
+  overflow: hidden;
+  margin-left: 280px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  margin-bottom: 80px;
+}
+.main .content .companyProfile p {
+  line-height: 2em;
+}
+.main .content .competeEdge h4 {
+  line-height: 1;
+  color: #938953;
+  font-weight: normal;
+}
+.main .content .competeEdge p {
+  line-height: 2em;
+  padding: 8px 0 26px;
+}
+.main .content .competeEdge .line {
+  color: #c4bd97;
+  line-height: 1.5em;
+}
+.main .content .developHistory > li {
+  line-height: 2em;
+}
+.main .content .developHistory > li .time {
+  display: inline-block;
+  width: 145px;
+  color: #938953;
+  font-size: 16px;
+}
+.main .content .developHistory > li .desc {
+  display: inline-block;
+  font-size: 16px;
+}
+.main .content .developHistory > li .line {
+  color: #c4bd97;
+}
+.main .content .mannagementLayer {
+  font-size: 16px;
+}
+.main .content .mannagementLayer p {
+  line-height: 2em;
+}
+.main .content .mannagementLayer p.layer_title {
+  margin-bottom: 24px;
+  color: #938953;
+}
+.main .content .mannagementLayer .line {
+  margin: 25px 0;
+  color: #c4bd97;
+}
+.main .content .financeLease > li {
+  width: 230px;
+  float: left;
+  margin-right: 80px;
+  margin-bottom: 50px;
+}
+.main .content .financeLease > li:nth-child(3n) {
+  margin-right: 0;
+}
+.main .content .financeLease > li > img {
+  display: block;
+  width: 100%;
+  height: 161px;
+  background-color: pink;
+}
+.main .content .financeLease > li > div {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+.main .content .consultingService > p,
+.main .content .serviceField > p {
+  line-height: 2em;
+}
+.main .content .contactUs > h3 {
+  font-weight: bold;
+}
+.main .content .contactUs .contact_list {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.main .content .contactUs .contact_list > dd {
+  line-height: 1.8em;
+}
+.main .content .talentRecruit > li {
+  margin-bottom: 30px;
+}
+.main .content .talentRecruit p {
+  font-size: 14px;
+  line-height: 1.8;
+  padding-left: 10px;
+}
+.main .content .talentRecruit h3 {
+  line-height: 33px;
+  font-size: 12px;
+  color: #666;
+  padding: 0 20px 0 10px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}

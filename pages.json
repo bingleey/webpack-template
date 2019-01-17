@@ -1,0 +1,76 @@
+[
+  {
+    "name": "index", 
+    "channelName": "index", 
+    "isRoot": "index", 
+    "text": "中祺首页"
+  },
+  {
+    "name": "aboutUs", 
+    "channelName": "aboutUs", 
+    "isRoot": "false", 
+    "text": "关于我们"
+  },
+  {
+    "name": "taskEplain", 
+    "channelName": "taskEplain", 
+    "isRoot": "false", 
+    "text": "业务概览"
+  },
+  {
+    "name": "contactUs", 
+    "channelName": "contactUs", 
+    "isRoot": "false", 
+    "text": "联系我们"
+  },
+  {
+    "name": "companyProfile",
+    "channelName": "aboutUs",
+    "text": "公司简介"
+  },
+  {
+    "name": "competeEdge",
+    "channelName": "aboutUs",
+    "text": "竞争优势"
+  },
+  {
+    "name": "developHistory",
+    "channelName": "aboutUs",
+    "text": "发展历程"
+  },
+  {
+    "name": "mannagementLayer",
+    "channelName": "aboutUs",
+    "text": "董事及管理层"
+  },
+  {
+    "name": "financeLease",
+    "channelName": "taskEplain",
+    "text": "融资租赁"
+  },
+  {
+    "name": "consultingService",
+    "channelName": "taskEplain",
+    "text": "咨询服务"
+  },
+  {
+    "name": "serviceField",
+    "channelName": "taskEplain",
+    "text": "服务领域"
+  },
+  {
+    "name": "contactUs",
+    "channelName": "contactUs",
+    "text": "联系我们"
+  },
+  {
+    "name": "talentRecruit",
+    "channelName": "contactUs",
+    "text": "人才招聘"
+  },
+  {
+    "name": "onlineConsult",
+    "channelName": "contactUs",
+    "text": "在线咨询"
+  }
+]

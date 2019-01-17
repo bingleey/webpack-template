@@ -1,0 +1,16 @@
+<%
+  let currentPages = pages.filter(function(_page) {
+    return _page.channelName == page.channelName && !_page.isRoot
+  })
+
+  let isRootPage = pages.find(function(_page) {
+    return _page.channelName == page.channelName && _page.isRoot == "false"
+  })
+%>
+
+<dl class="sidebar">
+  <dt><%= isRootPage.text %></dt>
+  <% currentPages.forEach(function(_page) { %>
+    <dd><a class="<%= _page.name==page.name ? 'active' : '' %>" href="/pages/<%= _page.name %>.html"><%= _page.text %></a></dd>
+  <% }) %>
+</dl>

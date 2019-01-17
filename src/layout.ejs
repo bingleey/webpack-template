@@ -1,0 +1,33 @@
+<%
+  let pages = htmlWebpackPlugin.options.pages;
+  let page = pages.find(function(page){
+    return page.name == htmlWebpackPlugin.options.pageName;
+  });
+%>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= page.text %></title>
+</head>
+<body>
+  <%= require('./components/header.ejs')({page: page, pages: pages}) %>
+
+  <%  if(page.name == 'index') { %>
+        <%= require('./tpls/index.ejs')() %>
+  <%  } else { %>
+        <%= require('./components/bannar.ejs')() %>
+        <%= require('./components/breack.ejs')({page: page, pages: pages}) %>
+        <div class="main w">
+          <%= require('./components/menus.ejs')({page: page, pages: pages}) %>
+          <div class="content">
+            <%= require(`\.\/tpls\/${page.name}\.ejs`)() %>
+          </div>
+        </div>
+  <%  }  %>
+
+  <%= require('./components/footer.ejs')() %>
+</body>
+</html>

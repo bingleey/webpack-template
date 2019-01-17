@@ -1,0 +1,18 @@
+<%
+  let currentPages = pages.filter(function(_page) {
+    return _page.channelName == page.channelName && !_page.isRoot
+  })
+  
+  let isRootPage = pages.find(function(_page) {
+    return _page.channelName == page.channelName && _page.isRoot == "false"
+  })
+%>
+
+
+<div class="breack">
+  <div class="w clearfix">
+    <p class="fr" style="margin-right: 20px">
+      <a href="/index.html">首页</a><i>></i><a href="/pages/<%= currentPages[0].name %>.html"><%= isRootPage.text %></a><i>></i><span><%= page.text %></span>
+    </p>
+  </div>
+</div>

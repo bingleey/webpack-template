@@ -1,0 +1,41 @@
+<%
+  let isRootPage = pages.filter(function(_page) {
+    return _page.isRoot == "false"
+  })
+  isRootPage.forEach(function(_page) {
+    if (!_page.children) {
+      _page.children || (_page.children = []);
+      pages.forEach(function(__page) {
+        if (_page.channelName == __page.channelName && !__page.isRoot) {
+          _page.children.push(__page)
+        }
+      })
+    }
+  })
+%>
+
+
+<header>
+  <div class="header-tip">
+    <div class="w">
+      欢迎来到富银融资租赁（深圳）股份有限公司！
+    </div>
+  </div>
+  <div class="header-nav">
+    <div class="w clearfix">
+      <a href="/index.html" class="logo"><img src="" alt=""></a>
+      <div class="nav-list">
+        <% isRootPage.forEach(function(_page) { %>
+          <div class="nav-item <%= page.channelName == _page.channelName ? 'active' : '' %>">
+            <a href="/pages/<%= _page.children[0].name %>.html"><%= _page.text %></a>
+            <ul class="nav-item_menu">
+              <% _page.children.forEach(function(__page) { %>
+                <li><a href="/pages/<%= __page.name %>.html"><%= __page.text %></a></li>
+              <% }) %>
+            </ul>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+</header>
